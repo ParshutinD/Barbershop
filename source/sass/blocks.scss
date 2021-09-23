@@ -1,0 +1,360 @@
+//page-header
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.page-header__img {
+  align-self: center;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.page-header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__item {
+  @include fonts_oswald;
+  text-transform: uppercase;
+  color: $color_white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  &:last-child {
+    margin-right: 70px;
+  }
+}
+
+.page-header__link {
+  @include fonts_oswald;
+  text-transform: uppercase;
+  color: $color_white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 14px 20px;
+  background-color: $color_red;
+}
+
+//main-section
+
+.main-section {
+  background-image: url(../img/main-section-bg.png);
+  background-repeat: no-repeat;
+}
+
+.main-section__slider {
+  padding-top: 282px;
+  padding-bottom: 238px;
+}
+
+.main-section__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 85px;
+  text-transform: uppercase;
+  color: $color_white;
+  max-width: 750px;
+  padding-bottom: 33px;
+}
+
+.main-section__subtitle {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color_grey;
+  max-width: 278px;
+  padding-bottom: 18px;
+}
+
+.main-section__link {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-left: 50px;
+}
+
+//about-us
+
+.about-us .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 110px;
+  padding-bottom: 40px;
+}
+
+.about-us__list {
+  display: flex;
+}
+
+.about-us__wrapper {
+  padding-left: 100px;
+}
+
+.about-us__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: $color_white;
+  max-width: 570px;
+  position: relative;
+
+  &::before {
+    content: "Barbercrop";
+    position: absolute;
+    top: 130px;
+    left: -250px;
+    @include fonts_oswald;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: $color_dark;
+    z-index: 1;
+  }
+}
+
+.about-us__subtitle {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color_grey;
+  max-width: 570px;
+  padding-bottom: 30px;
+}
+
+.about-us__item-title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-bottom: 10px;
+}
+
+.about-us__item-subtitle {
+  @include fonts_roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_grey;
+  padding-bottom: 50px;
+}
+
+.about-us__link {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding: 14px 20px;
+  background-color: $color_red;
+  border: 2px solid #eb1616;
+  box-sizing: border-box;
+}
+
+//services
+
+.services__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-bottom: 20px;
+  padding-top: 110px;
+}
+
+.services__subtitle {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color_grey;
+  max-width: 570px;
+  padding-bottom: 50px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 45px;
+  justify-content: space-between;
+  padding-bottom: 110px;
+}
+
+.services__item {
+  max-width: 370px;
+}
+
+.services__item-title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-bottom: 10px;
+}
+
+.services__item__subtitle {
+  @include fonts_roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_grey;
+  max-width: 315px;
+  padding-bottom: 10px;
+}
+
+.services__item__price {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_red;
+  text-transform: uppercase;
+}
+
+//team-professionals
+
+.team-professionals .container {
+  display: flex;
+  padding-bottom: 110px;
+}
+
+.team-professionals {
+  background-image: url(../img/bg-prof.png);
+  background-repeat: no-repeat;
+}
+
+.team-professionals__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: $color_white;
+  max-width: 500px;
+  padding-top: 110px;
+  padding-bottom: 18px;
+}
+
+.team-professionals__subtitle {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color_white;
+  max-width: 570px;
+  padding-bottom: 50px;
+}
+
+.team-professionals__wrapper {
+  padding-left: 30px;
+}
+
+.team-professionals__wrapper-inner {
+  display: flex;
+  padding-top: 50px;
+}
+
+.team-professionals__list:first-child {
+  padding-right: 15px;
+}
+
+.team-professionals__item {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: $color_white;
+
+  &:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+
+.team-professionals__link {
+  @include fonts_oswald;
+  text-transform: uppercase;
+  color: $color_white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 14px 20px;
+  background-color: $color_red;
+}
+
+//blog
+
+.blog__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-bottom: 110px;
+}
+
+.blog__item {
+  max-width: 370px;
+}
+
+.blog__item-title {
+  @include fonts_oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 34px;
+  padding-bottom: 10px;
+  color: $color_white;
+}
+
+.blog__subtitile-data {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: $color_red;
+}
