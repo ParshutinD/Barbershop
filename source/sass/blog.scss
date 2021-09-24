@@ -1,0 +1,70 @@
+.our-blog__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color_white;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  &::after {
+    content: "recent posts";
+    @include fonts_oswald;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: $color_dark;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    z-index: -1;
+  }
+}
+
+.our-blog__item {
+  max-width: 370px;
+}
+
+.our-blog__item-title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.our-blog__item-date {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_red;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.our-blog__item-subtitle {
+  @include fonts_roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_grey;
+}
+
+.our-blog__list {
+  display: flex;
+  row-gap: 65px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 65px;
+}
+
+.our-blog .gallery__nav-list {
+  padding-bottom: 110px;
+}

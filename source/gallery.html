@@ -11,7 +11,7 @@
     <h1 class="visually-hidden">barbershop</h1>
     <header class="page-header">
       <div class="container">
-        <a href=""
+        <a
           ><img
             class="page-header__img"
             width="198"
@@ -23,13 +23,19 @@
           <nav class="page-header__nav">
             <ul class="page-header__list">
               <li>
+                <a class="page-header__item" href="index.html">home</a>
+              </li>
+              <li>
+                <a class="page-header__item" href="about.html">about</a>
+              </li>
+              <li>
+                <a class="page-header__item" href="services.html">services</a>
+              </li>
+              <li>
                 <a class="page-header__item page-header__item--current" href="#"
-                  >home</a
+                  >gallery</a
                 >
               </li>
-              <li><a class="page-header__item" href="about.html">about</a></li>
-              <li><a class="page-header__item" href="services.html">services</a></li>
-              <li><a class="page-header__item" href="gallery.html">gallery</a></li>
               <li><a class="page-header__item" href="blog.html">Blog</a></li>
               <li><a class="page-header__item" href="contacts.html">contacts</a></li>
             </ul>
@@ -39,203 +45,74 @@
       </div>
     </header>
     <main>
-      <section class="main-section">
+      <section class="gallery">
         <div class="container">
-          <div class="main-section__slider">
-            <div class="main-section__slider-item">
-              <h2 class="main-section__title">
-                we will keep you an impeccable look
-              </h2>
-              <p class="main-section__subtitle">
-                3891 Ranchview Dr. Richardson, California 62639
-              </p>
-              <a class="main-section__link" href="tel:+1234567890"
-                >+1 234 567 890</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about-us">
-        <div class="container">
-          <h2 class="about-us__title">professional barbershop for men only</h2>
-          <div class="about-us__wrapper">
-            <p class="about-us__subtitle">
-              Et tellus rhoncus urna a. Tempus felis, sociis lorem aliquet nibh
-              pellentesque. Vitae nunc, dolor, blandit eget eleifend etiam id.
-              Amet arcu lobortis sed pulvinar cursus pretium sit pretium.
-            </p>
-            <div class="about-us__wrapper-inner">
-              <ul class="about-us__list">
-                <li class="about-us__item">
-                  <h3 class="about-us__item-title">since 2015</h3>
-                  <p class="about-us__item-subtitle">
-                    Dui cursus neque et at ipsum. Cursus urna fringilla nisl
-                    enim duis cras odio.
-                  </p>
-                </li>
-                <li class="about-us__item">
-                  <h3 class="about-us__item-title">1000+ clients</h3>
-                  <p class="about-us__item-subtitle">
-                    Metus varius vitae habitant lorem. Porta scelerisque
-                    facilisi.
-                  </p>
-                </li>
-              </ul>
-              <a class="about-us__link">learn more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="services">
-        <div class="container">
-          <h2 class="services__title">what we provide</h2>
-          <p class="services__subtitle">
-            Risus odio lobortis ullamcorper felis vitae bibendum mi. Penatibus
-            fusce consequat donec vitae porttitor elementum.
-          </p>
-          <ul class="services__list">
-            <li class="services__item">
-              <h3 class="services__item-title">HAIRCUT</h3>
-              <p class="services__item__subtitle">
-                A dui aliquam ultrices eros lorem nibh vivamus. Quis aliquam
-                duis pharetra faucibus ultrices volutpat quisque.
-              </p>
-              <p class="services__item__price">from $30</p>
-            </li>
+          <h2 class="gallery__title">Gallery with our Cuts</h2>
 
-            <li class="services__item">
-              <h3 class="services__item-title">MOUSTACHE</h3>
-              <p class="services__item__subtitle">
-                Viverra duis ut orci mi id. Eget ultricies facilisi elementum
-                nec vel a gravida facilisis in. Tellus felis sapien adipiscing.
-              </p>
-              <p class="services__item__price">from $30</p>
+          <ul class="gallery__filter-list">
+            <li class="gallery__filter-item gallery__filter-item--current">
+              ALL
             </li>
-
-            <li class="services__item">
-              <h3 class="services__item-title">SHAVE</h3>
-              <p class="services__item__subtitle">
-                Lorem velit parturient consectetur cursus tincidunt tristique
-                pretium volutpat urna. Vitae scelerisque quam eget.
-              </p>
-              <p class="services__item__price">from $30</p>
+            <li class="gallery__filter-item">HAIRCUT</li>
+            <li class="gallery__filter-item">BEARD AND MUSTACHE</li>
+            <li class="gallery__filter-item">HAIR DYEING</li>
+          </ul>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img
+                src="img/services1.png"
+                width="570"
+                height="450"
+                alt="gallery-photo"
+              />
             </li>
-
-            <li class="services__item">
-              <h3 class="services__item-title">stacking</h3>
-              <p class="services__item__subtitle">
-                Dapibus ac mattis semper hendrerit eu dolor aliquam. Vitae sem
-                orci non diam. Venenatis augue arcu mauris id eros.
-              </p>
-              <p class="services__item__price">from $30</p>
+            <li class="gallery__item">
+              <img
+                src="img/services2.png"
+                width="570"
+                height="450"
+                alt="gallery-photo"
+              />
             </li>
-
-            <li class="services__item">
-              <h3 class="services__item-title">BREADTRIM</h3>
-              <p class="services__item__subtitle">
-                Interdum tincidunt condimentum vestibulum feugiat arcu, in.
-                Maecenas sit sem erat tellus pellentesque aliquet.
-              </p>
-              <p class="services__item__price">from $30</p>
+            <li class="gallery__item">
+              <img
+                src="img/services3.png"
+                width="570"
+                height="450"
+                alt="gallery-photo"
+              />
             </li>
-
-            <li class="services__item">
-              <h3 class="services__item-title">hair dyeing</h3>
-              <p class="services__item__subtitle">
-                Congue pulvinar morbi pharetra tincidunt vel tincidunt. Amet,
-                morbi neque tellus vivamus venenatis diam nisl.
-              </p>
-              <p class="services__item__price">from $30</p>
+            <li class="gallery__item">
+              <img
+                src="img/services4.png"
+                width="570"
+                height="450"
+                alt="gallery-photo"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="img/services5.png"
+                width="570"
+                height="450"
+                alt="gallery-photo"
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                src="img/services6.png"
+                width="570"
+                height="450"
+                alt="gallery-photo"
+              />
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="team-professionals">
-        <div class="container">
-          <div class="team-professionals__wrapper">
-            <h2 class="team-professionals__title">
-              team of professionals is waiting for you
-            </h2>
-            <p class="team-professionals__subtitle">
-              Risus odio lobortis ullamcorper felis vitae bibendum mi. Penatibus
-              fusce consequat donec vitae porttitor elementum volutpat gravida.
-              Tellus hac tristique nisi, id amet cras tempor, amet.
-            </p>
-            <a class="team-professionals__link">book now</a>
-          </div>
-          <div class="team-professionals__wrapper">
-            <h2 class="team-professionals__title">Special Opening Hours</h2>
-            <div class="team-professionals__wrapper-inner">
-              <ul class="team-professionals__list">
-                <li class="team-professionals__item">
-                  Monday: 9:00 am – 7:30 pm
-                </li>
-                <li class="team-professionals__item">
-                  Tuesday: 9:00 am – 7:30 pm
-                </li>
-                <li class="team-professionals__item">
-                  Wednesday: 9:00 am – 7:30 pm
-                </li>
-              </ul>
-              <ul class="team-professionals__list">
-                <li class="team-professionals__item">
-                  Thursday: 9:00 am – 7:30 pm
-                </li>
-                <li class="team-professionals__item">
-                  Friday: 9:00 am – 7:30 pm
-                </li>
-                <li class="team-professionals__item">Sat/sun: CLOSED</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="blog">
-        <div class="container">
-          <h2 class="blog__title">our Blog</h2>
-          <ul class="blog__list">
-            <li class="blog__item">
-              <img
-                class="blog__img"
-                width="370"
-                height="330"
-                alt="our-work"
-                src="img/blog-1.png"
-              />
-              <h3 class="blog__item-title">
-                5 advantages why you should visit barbershop
-              </h3>
-              <p class="blog__subtitile-data">04 August, 2021</p>
-            </li>
-
-            <li class="blog__item">
-              <img
-                class="blog__img"
-                width="370"
-                height="330"
-                alt="our-work"
-                src="img/blog-2.png"
-              />
-              <h3 class="blog__item-title">
-                popular COSMETICS FOR HAIR STYLING
-              </h3>
-              <p class="blog__subtitile-data">02 August, 2021</p>
-            </li>
-
-            <li class="blog__item">
-              <img
-                class="blog__img"
-                width="370"
-                height="330"
-                alt="our-work"
-                src="img/blog-3.png"
-              />
-              <h3 class="blog__item-title">
-                Features of beard and mustache care
-              </h3>
-              <p class="blog__subtitile-data">12 July, 2021</p>
-            </li>
+          <ul class="gallery__nav-list">
+            <li class="gallery__nav-item">back</li>
+            <li class="gallery__nav-item">1</li>
+            <li class="gallery__nav-item">2</li>
+            <li class="gallery__nav-item">3</li>
+            <li class="gallery__nav-item">next</li>
           </ul>
         </div>
       </section>
@@ -250,7 +127,6 @@
             src="img/logo.svg"
             alt="logo"
         /></a>
-
         <div class="page-footer__wrapper">
           <a class="page-footer__link" href="tel:+1234567890">+1 234 567 890</a>
           <a class="page-footer__link-address"

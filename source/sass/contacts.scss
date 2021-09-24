@@ -1,0 +1,146 @@
+.contacts__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color_white;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 100px;
+
+  &::after {
+    content: "CONTACTS";
+    @include fonts_oswald;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: $color_dark;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    z-index: -1;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__item-title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-bottom: 10px;
+}
+
+.contacts__item-link {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: lowercase;
+  color: $color_grey;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.contacts__form {
+  max-width: 900px;
+}
+
+.contacts__form fieldset {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contacts__form label {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color_white;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.contacts__form input {
+  width: 376px;
+  height: 50px;
+  padding-left: 18px;
+
+  border-top: none;
+  border-right: none;
+  border-left: 2px solid $color_border;
+  border-bottom: 2px solid $color_border;
+  background-color: $color_basic_bg;
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: $color_white;
+
+  &::placeholder {
+    @include fonts_roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $color_white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.contacts__message {
+  width: 850px;
+  height: 180px;
+  padding-left: 18px;
+  padding-top: 15px;
+  resize: none;
+  border-top: none;
+  border-right: none;
+  border-left: 2px solid $color_border;
+  border-bottom: 2px solid $color_border;
+  background-color: $color_basic_bg;
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: $color_white;
+  margin-bottom: 225px;
+
+  &::placeholder {
+    @include fonts_roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $color_white;
+  }
+}
+
+.map {
+  filter: grayscale(100%);
+}

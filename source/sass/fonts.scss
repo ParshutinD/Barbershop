@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), local("Oswald"),
+    url("../fonts/Oswald-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto"),
     url("../fonts/Roboto-Regular.ttf") format("truetype");

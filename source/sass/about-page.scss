@@ -1,0 +1,288 @@
+//about-us-page
+
+.about-us-page__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color_white;
+  text-transform: uppercase;
+  max-width: 570px;
+  position: relative;
+  padding-top: 110px;
+
+  &::after {
+    content: "about us";
+    width: 550px;
+    @include fonts_oswald;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: $color_dark;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    z-index: -1;
+  }
+}
+
+.about-us-page__wrapper {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 110px;
+  justify-content: space-between;
+}
+
+.about-us-page__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-page__item {
+  max-width: 270px;
+}
+
+.about-us-page__item-title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $color_white;
+  padding-bottom: 10px;
+}
+
+.about-us-page__item-subtitle {
+  @include fonts_roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_grey;
+}
+.about-us-page__item:first-child {
+  margin-right: 30px;
+}
+
+.about-us-page__img {
+  margin-bottom: 35px;
+}
+
+.about-us-page__item.about-us-page__item-subtitle {
+  min-width: 570px;
+}
+
+//our-masters
+
+.our-masters__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color_white;
+  text-transform: uppercase;
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+
+.our-masters__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.our-masters__item-title {
+  @include fonts_oswald;
+  color: $color_white;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+.our-masters__item-subtitle {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $color_red;
+}
+
+//our works
+
+.our-works__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color_white;
+  text-transform: uppercase;
+  padding-top: 110px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "our best works";
+    @include fonts_oswald;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: $color_dark;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    z-index: -1;
+  }
+}
+
+.our-works__list {
+  display: flex;
+  padding-top: 50px;
+}
+
+//services
+
+.services__title--page {
+  padding-bottom: 54px;
+  &::after {
+    content: "";
+  }
+}
+
+.services__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.services__link {
+  @include fonts_oswald;
+  text-transform: uppercase;
+  color: $color_white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 14px 20px;
+  background-color: $color_red;
+}
+
+.services__item--about {
+  background-color: $color_dark;
+  box-sizing: border-box;
+  &:hover {
+    outline: 2px solid $color_red;
+  }
+}
+
+.services__item-title--about {
+  padding-top: 30px;
+}
+
+.services__item__price--about {
+  padding-bottom: 25px;
+}
+
+//feedback
+
+.feedback__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color_white;
+  text-transform: uppercase;
+  max-width: 500px;
+  padding-bottom: 45px;
+}
+
+.feedback__list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 110px;
+}
+
+.feedback__item {
+  max-width: 530px;
+  padding-left: 75px;
+}
+
+.feedback__subtitle {
+  @include fonts_roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_grey;
+  padding-bottom: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 70px;
+    height: 55px;
+    position: absolute;
+    background-image: url(../img/icon_quote.svg);
+    left: -100px;
+  }
+}
+
+.feedback__name {
+  @include fonts_roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_red;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+//transform
+
+.transform {
+  background-image: url(../img/bg-about-us.png);
+}
+
+.transform .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.transform__wrapper {
+  padding-bottom: 110px;
+}
+
+.transform__title {
+  @include fonts_oswald;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: $color_white;
+  text-transform: uppercase;
+  padding-top: 110px;
+  padding-bottom: 20px;
+}
+
+.transform__subtitle {
+  @include fonts_roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color_white;
+  padding-bottom: 50px;
+  max-width: 570px;
+}
+
+.transform__link {
+  @include fonts_oswald;
+  text-transform: uppercase;
+  color: $color_white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 14px 20px;
+  background-color: $color_red;
+}
